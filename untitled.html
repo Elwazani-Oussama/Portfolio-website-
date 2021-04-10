@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>docs</title>
+	<link rel="stylesheet" type="text/css" href="stst.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<!-- nav section -->
+	<div class="nav-bar">
+		<nav id="nav">
+			<a href="#" class="logo">oussama</a>
+		
+			<ul>
+			<li><a href="#home" class="home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+			</ul>
+			<button class="nav-icon" id="nav-icon"><span></span></button>
+		</nav>
+	</div>
+	<!-- end van section  -->
+
+	<!-- home section start -->
+	<div class="main-contant">
+		<section class="home section hidden">
+			<div class="container">
+				<div class="intro">
+					<img src="image.jpg" alt="profile" class="shadow-dark">
+					<h1 class="">Elwazani Oussama</h1>
+					<p id="p2" onclick="show">I'm Web Developer</p>
+					<div class="social-link">
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter-square"></i></a>
+						<a href="#"><i class="fa fa-github-square"></i></a>
+						<a href="#"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- home section end  -->
+
+
+
+	<!-- about me section start  -->
+	<section>
+		<div class="row">
+			<div class="title">
+				<h1><a href="#">About Me</a></h1>
+			</div>
+			<div class="section-text">
+				<p class="text-size">
+					Hi! My name is Oussama Elwazani. I am a Web Developer, and I'm very passionate and dedicated 
+     				to my work, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration. 
+				</p>
+			</div>
+			<div class="title2">
+				<h1>Skills</h1>
+			</div>
+		</div>
+	</section>
+	<!-- about me section end  -->
+
+
+
+
+
+	<script>
+		var nav = document.getElementById("nav");
+			var navlinks = nav.getElementsByTagName("a");
+
+			function toggleNav() {
+			nav.classList.contains("active")
+				? nav.classList.remove("active")
+				: nav.classList.add("active");
+			}
+
+			document.getElementById("nav-icon").addEventListener("click", function (e) {
+			e.preventDefault();
+			toggleNav();
+			});
+
+			for (var i = 0; i < navlinks.length; i++) {
+			navlinks[i].addEventListener("click", function () {
+				toggleNav();
+			});
+			}
+	</script>
+</body>
+</html>
