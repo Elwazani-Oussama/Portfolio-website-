@@ -266,6 +266,7 @@
 	top: -65px;
 }
 .title2 .skills .progress .progress-in{
+  width: 10px;
   position: absolute;
 	left: 2px;
 	top: 1.5px;
@@ -278,11 +279,40 @@
   position: relative;
   top: -70px;
   right:-700px;
+  width: 45%;
+}
+.title2 .skills2 .progress{
+  background-color: #fff;
+	height: 8px;
+	border-radius: 50px;
+	width: 100%;
+  height: 30px;
+
+}
+.title2 .skills2 .progress .skills-percent{
+  width: 10px;
+  font-size: 20px;
+  line-height: 40px;
+	color: white;
+	position: relative;
+	right: -560px;
+	top: -65px;
+}
+.title2 .skills2 .progress .progress-in{
+  position: absolute;
+	left: 2px;
+	top: 1.5px;
+	height: 90%;
+	position: relative;
+	border-radius: 50px;
+  background-color:#f8d244;
 }
 .marg1{
   margin-top: -40px;
 }
-
+.buttons{
+  width: 100px;
+}
 .btn{
 	font-size: 25px;
 	font-weight: 500px;
@@ -315,9 +345,6 @@
   -webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
-/* .ps img{
-  position: absolute;
-} */
 .ai{
   position: relative;
   width: 100px;
@@ -335,6 +362,7 @@
   position: relative;
   width: 200px;
   height: 100px;
+
   right: -750px;
   top: -450px;
   -webkit-transition:all 0.3s ease;
